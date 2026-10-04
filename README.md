@@ -18,8 +18,7 @@ The program integrates Quran metadata (Surah names in Arabic/English, Surah numb
 │   └── nlohmann/               # nlohmann/json library headers
 │       ├── json.hpp
 │       └── json_fwd.hpp
-├── src/                        # C++ source code
-│   └── main.cpp                # Core processing and JSON conversion logic
+├── main.cpp                    # Core processing and JSON conversion logic
 ├── json-files/                 # Active dataset directory
 │   ├── me.json                 # Input: Quran metadata by Surah
 │   ├── data.json               # Input: Verse texts in Uthmanic script
@@ -68,7 +67,7 @@ The compiled binary will be placed at `build/json_c__`.
 
 ```bash
 mkdir -p build
-g++ -std=c++17 -O2 -Iinclude src/main.cpp -o build/json_c__
+g++ -std=c++17 -O2 -Iinclude main.cpp -o build/json_c__
 ```
 
 ---

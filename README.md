@@ -1,4 +1,4 @@
-# Quran JSON Processor (C++)
+# quran-json
 
 A fast, modern C++ tool for processing, combining, and restructuring Quranic datasets into clean, hierarchical JSON representations.
 
@@ -61,13 +61,13 @@ cmake -B build -S .
 cmake --build build
 ```
 
-The compiled binary will be placed at `build/json_c__`.
+The compiled binary will be placed at `build/quran_json`.
 
 ### Option 2: Direct Compilation with GCC / Clang
 
 ```bash
 mkdir -p build
-g++ -std=c++17 -O2 -Iinclude main.cpp -o build/json_c__
+g++ -std=c++17 -O2 -Iinclude main.cpp -o build/quran_json
 ```
 
 ---
@@ -79,28 +79,28 @@ Runs with default datasets (`json-files/me.json` and `json-files/data.json`), wr
 
 ```bash
 # From the project root:
-./build/json_c__
+./build/quran_json
 
 # Or from inside the build directory:
 cd build
-./json_c__
+./quran_json
 ```
 
 ### Custom File Paths
 You can specify custom input and output file paths via positional arguments:
 
 ```bash
-./build/json_c__ <path/to/metadata.json> <path/to/text.json> <path/to/output.json>
+./build/quran_json <path/to/metadata.json> <path/to/text.json> <path/to/output.json>
 ```
 
 ### Help Option
 ```bash
-./build/json_c__ --help
+./build/quran_json --help
 ```
 
 Output:
 ```text
-Usage: ./build/json_c__ [OPTIONS] [ME_JSON] [DATA_JSON] [OUTPUT_JSON]
+Usage: ./build/quran_json [OPTIONS] [ME_JSON] [DATA_JSON] [OUTPUT_JSON]
 
 Restructures and combines Quran JSON datasets with verse text.
 

@@ -6,6 +6,7 @@ cmake-build-*/
 *.obj
 *.exe
 *.out
+quran_json
 json_c__
 
 # Compressed archives

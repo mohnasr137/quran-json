@@ -1,4 +1,20 @@
-.idea
-cmake-build-debug
-CMakeLists.txt
+# Build artifacts and directories
+build/
+bin/
+cmake-build-*/
+*.o
+*.obj
+*.exe
+*.out
+json_c__
+
+# Compressed archives
 *.zip
+*.tar.gz
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store

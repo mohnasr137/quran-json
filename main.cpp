@@ -38,18 +38,29 @@ int main() {
 
     for (ll j = 0; j < size_of_s; j++) {
         for (ll i = 0; i < data[s[j]].size(); i++) {
+//            myVector1.push_back({
+//                                        {"id",              data[s[j]][i]["id"]},
+//                                        {"page",            data[s[j]][i]["page"]},
+//                                        {"line_start",      data[s[j]][i]["line_start"]},
+//                                        {"line_end",        data[s[j]][i]["line_end"]},
+//                                        {"aya_no",          data[s[j]][i]["aya_no"]},
+//                                        {"aya_text",        data3[j]["verses"][i]["text"]},
+//                                        {"aya_text_emlaey", data[s[j]][i]["aya_text_emlaey"]}});
+//        }
             myVector1.push_back({
                                         {"id",              data[s[j]][i]["id"]},
-                                        {"page",            data[s[j]][i]["page"]},
-                                        {"line_start",      data[s[j]][i]["line_start"]},
-                                        {"line_end",        data[s[j]][i]["line_end"]},
                                         {"aya_no",          data[s[j]][i]["aya_no"]},
-                                        {"aya_text",        data3[j]["verses"][i]["text"]},
-                                        {"aya_text_emlaey", data[s[j]][i]["aya_text_emlaey"]}});
+                                        {"aya_text",        data3[j]["verses"][i]["text"]}});
         }
         if(j == 0){
+//            data2 = {{s[0], {
+//                    {"jozz", data[s[0]][0]["jozz"]},
+//                    {"sura_no", data[s[0]][0]["sura_no"]},
+//                    {"sura_name_en", data[s[0]][0]["sura_name_en"]},
+//                    {"sura_name_ar", data[s[0]][0]["sura_name_ar"]},
+//                    {"verses", myVector1}
+//            }}};
             data2 = {{s[0], {
-                    {"jozz", data[s[0]][0]["jozz"]},
                     {"sura_no", data[s[0]][0]["sura_no"]},
                     {"sura_name_en", data[s[0]][0]["sura_name_en"]},
                     {"sura_name_ar", data[s[0]][0]["sura_name_ar"]},
